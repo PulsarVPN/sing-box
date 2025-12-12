@@ -1,8 +1,8 @@
 package libbox
 
 import (
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/option"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/option"
 )
 
 type PlatformInterface interface {

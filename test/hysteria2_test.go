@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/option"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/option"
 	"github.com/sagernet/sing-quic/hysteria2"
 	"github.com/sagernet/sing/common"
 	F "github.com/sagernet/sing/common/format"

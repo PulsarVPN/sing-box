@@ -3,7 +3,7 @@ package rule
 import (
 	"net/netip"
 
-	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/adapter"
 	N "github.com/sagernet/sing/common/network"
 )
 

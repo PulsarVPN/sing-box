@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"os"
 
-	box "github.com/PulsarVPN/sing-box"
+	box "github.com/pulsarvpn/sing-box"
 )
 
 func initializeHTTP3Client(instance *box.Box) error {

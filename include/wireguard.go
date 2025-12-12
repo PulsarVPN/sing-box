@@ -3,9 +3,9 @@
 package include
 
 import (
-	"github.com/PulsarVPN/sing-box/adapter/endpoint"
-	"github.com/PulsarVPN/sing-box/adapter/outbound"
-	"github.com/PulsarVPN/sing-box/protocol/wireguard"
+	"github.com/pulsarvpn/sing-box/adapter/endpoint"
+	"github.com/pulsarvpn/sing-box/adapter/outbound"
+	"github.com/pulsarvpn/sing-box/protocol/wireguard"
 )
 
 func registerWireGuardOutbound(registry *outbound.Registry) {

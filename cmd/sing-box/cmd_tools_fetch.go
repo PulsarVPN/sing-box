@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"os"
 
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/log"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/log"
 	"github.com/sagernet/sing/common/bufio"
 	E "github.com/sagernet/sing/common/exceptions"
 	M "github.com/sagernet/sing/common/metadata"

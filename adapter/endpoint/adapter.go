@@ -1,6 +1,6 @@
 package endpoint
 
-import "github.com/PulsarVPN/sing-box/option"
+import "github.com/pulsarvpn/sing-box/option"
 
 type Adapter struct {
 	endpointType string

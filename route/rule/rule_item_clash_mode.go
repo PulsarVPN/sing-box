@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/adapter"
 	"github.com/sagernet/sing/service"
 )
 

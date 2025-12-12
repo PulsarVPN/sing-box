@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/common/conntrack"
-	"github.com/PulsarVPN/sing-box/experimental/clashapi"
+	"github.com/pulsarvpn/sing-box/common/conntrack"
+	"github.com/pulsarvpn/sing-box/experimental/clashapi"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/memory"
 )

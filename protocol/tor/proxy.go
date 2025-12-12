@@ -7,8 +7,8 @@ import (
 	"encoding/hex"
 	"net"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/log"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/auth"
 	E "github.com/sagernet/sing/common/exceptions"

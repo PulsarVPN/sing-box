@@ -3,8 +3,8 @@ package option
 import (
 	"context"
 
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/experimental/deprecated"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/experimental/deprecated"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/json"
 	"github.com/sagernet/sing/common/json/badjson"

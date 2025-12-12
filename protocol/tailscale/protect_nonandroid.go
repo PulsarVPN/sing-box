@@ -2,7 +2,7 @@
 
 package tailscale
 
-import "github.com/PulsarVPN/sing-box/experimental/libbox/platform"
+import "github.com/pulsarvpn/sing-box/experimental/libbox/platform"
 
 func setAndroidProtectFunc(platformInterface platform.Interface) {
 }

@@ -7,8 +7,8 @@ import (
 	"io"
 	"net/netip"
 
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/option"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/option"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/domain"
 	E "github.com/sagernet/sing/common/exceptions"

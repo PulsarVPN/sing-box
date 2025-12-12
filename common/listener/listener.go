@@ -8,9 +8,9 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/common/settings"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/common/settings"
+	"github.com/pulsarvpn/sing-box/option"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/logger"

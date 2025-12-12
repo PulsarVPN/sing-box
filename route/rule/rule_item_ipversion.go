@@ -1,7 +1,7 @@
 package rule
 
 import (
-	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/adapter"
 )
 
 var _ RuleItem = (*IPVersionItem)(nil)

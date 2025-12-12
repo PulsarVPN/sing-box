@@ -2,7 +2,7 @@
 
 package main
 
-import "github.com/PulsarVPN/sing-box/log"
+import "github.com/pulsarvpn/sing-box/log"
 
 func main() {
 	err := generateCompletions()

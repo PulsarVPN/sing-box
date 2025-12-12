@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/log"
 
 	"github.com/spf13/cobra"
 )

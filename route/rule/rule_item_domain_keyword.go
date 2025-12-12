@@ -3,7 +3,7 @@ package rule
 import (
 	"strings"
 
-	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/adapter"
 )
 
 var _ RuleItem = (*DomainKeywordItem)(nil)

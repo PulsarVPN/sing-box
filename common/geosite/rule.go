@@ -1,6 +1,6 @@
 package geosite
 
-import "github.com/PulsarVPN/sing-box/option"
+import "github.com/pulsarvpn/sing-box/option"
 
 type ItemType = uint8
 

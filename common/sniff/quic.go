@@ -10,10 +10,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/common/ja3"
-	"github.com/PulsarVPN/sing-box/common/sniff/internal/qtls"
-	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/common/ja3"
+	"github.com/pulsarvpn/sing-box/common/sniff/internal/qtls"
+	C "github.com/pulsarvpn/sing-box/constant"
 	"github.com/sagernet/sing/common/buf"
 	E "github.com/sagernet/sing/common/exceptions"
 

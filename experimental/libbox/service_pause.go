@@ -3,7 +3,7 @@ package libbox
 import (
 	"time"
 
-	C "github.com/PulsarVPN/sing-box/constant"
+	C "github.com/pulsarvpn/sing-box/constant"
 )
 
 type iOSPauseFields struct {

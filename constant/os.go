@@ -1,7 +1,7 @@
 package constant
 
 import (
-	"github.com/PulsarVPN/sing-box/constant/goos"
+	"github.com/pulsarvpn/sing-box/constant/goos"
 )
 
 const IsAndroid = goos.IsAndroid == 1

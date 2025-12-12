@@ -5,10 +5,10 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/common/process"
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/log"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/common/process"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/log"
+	"github.com/pulsarvpn/sing-box/option"
 	M "github.com/sagernet/sing/common/metadata"
 )
 

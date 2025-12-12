@@ -4,7 +4,7 @@ import (
 	"context"
 	"net"
 
-	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/adapter"
 	E "github.com/sagernet/sing/common/exceptions"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"

@@ -3,9 +3,9 @@ package rule
 import (
 	"context"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/adapter"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/option"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/service"

@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/option"
 	"github.com/sagernet/bbolt"
 	bboltErrors "github.com/sagernet/bbolt/errors"
 	"github.com/sagernet/sing/common"

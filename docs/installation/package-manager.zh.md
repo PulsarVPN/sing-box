@@ -139,7 +139,7 @@ curl -fsSL https://sing-box.app/install.sh | sh -s -- --version <version>
 
 [scoop]: https://github.com/ScoopInstaller/Main/blob/master/bucket/sing-box.json
 
-[winget]: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/PulsarVPN/sing-box
+[winget]: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/pulsarvpn/sing-box
 
 [termux]: https://github.com/termux/termux-packages/tree/master/packages/sing-box
 

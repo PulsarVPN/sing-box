@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/log"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/log"
+	"github.com/pulsarvpn/sing-box/option"
 	"github.com/sagernet/fswatch"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"

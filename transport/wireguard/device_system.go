@@ -9,14 +9,14 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/sagernet/sing-tun"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/wireguard-go/device"
+	wgTun "github.com/pulsarvpn/wireguard-go/tun"
+	tun "github.com/sagernet/sing-tun"
 	"github.com/sagernet/sing/common"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"
 	"github.com/sagernet/sing/service"
-	"github.com/sagernet/wireguard-go/device"
-	wgTun "github.com/sagernet/wireguard-go/tun"
 )
 
 var _ Device = (*systemDevice)(nil)

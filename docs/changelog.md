@@ -178,7 +178,7 @@ See [Tun](/configuration/inbound/tun/#loopback_address).
 We have significantly improved the performance of tun inbound on Apple platforms, especially in the gVisor stack.
 
 The following data was tested
-using [tun_bench](https://github.com/PulsarVPN/sing-box/blob/dev-next/cmd/internal/tun_bench/main.go) on M4 MacBook pro.
+using [tun_bench](https://github.com/pulsarvpn/sing-box/blob/dev-next/cmd/internal/tun_bench/main.go) on M4 MacBook pro.
 
 | Version     | Stack  | MTU   | Upload | Download |
 |-------------|--------|-------|--------|----------|
@@ -3307,7 +3307,7 @@ and [Listen Fields](/configuration/shared/listen#udp_fragment).
 * Add strict_route option for [Tun inbound](/configuration/inbound/tun#strict_route)
 * Add packetaddr support for [VMess outbound](/configuration/outbound/vmess#packet_addr)
 * Add better performing alternative gRPC implementation
-* Add [docker image](https://github.com/PulsarVPN/sing-box/pkgs/container/sing-box)
+* Add [docker image](https://github.com/pulsarvpn/sing-box/pkgs/container/sing-box)
 * Fix sniff override destination
 
 #### 1.0-beta1
@@ -3415,4 +3415,4 @@ and [Listen Fields](/configuration/shared/listen#udp_fragment).
 
 No changelog before.
 
-[#9]: https://github.com/PulsarVPN/sing-box/pull/9
+[#9]: https://github.com/pulsarvpn/sing-box/pull/9

@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/experimental/deprecated"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/experimental/deprecated"
 	F "github.com/sagernet/sing/common/format"
 )
 

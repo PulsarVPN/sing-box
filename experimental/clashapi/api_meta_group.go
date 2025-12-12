@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/common/urltest"
-	"github.com/PulsarVPN/sing-box/protocol/group"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/common/urltest"
+	"github.com/pulsarvpn/sing-box/protocol/group"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/batch"
 	"github.com/sagernet/sing/common/json/badjson"

@@ -5,8 +5,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/PulsarVPN/sing-box/common/tls"
-	internal_credentials "github.com/PulsarVPN/sing-box/transport/v2raygrpc/credentials"
+	"github.com/pulsarvpn/sing-box/common/tls"
+	internal_credentials "github.com/pulsarvpn/sing-box/transport/v2raygrpc/credentials"
 
 	"google.golang.org/grpc/credentials"
 )

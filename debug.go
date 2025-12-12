@@ -3,8 +3,8 @@ package box
 import (
 	"runtime/debug"
 
-	"github.com/PulsarVPN/sing-box/common/conntrack"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/common/conntrack"
+	"github.com/pulsarvpn/sing-box/option"
 )
 
 func applyDebugOptions(options option.DebugOptions) {

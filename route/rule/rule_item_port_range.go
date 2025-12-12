@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/adapter"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

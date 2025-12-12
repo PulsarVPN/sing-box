@@ -4,7 +4,7 @@ import (
 	"math"
 	runtimeDebug "runtime/debug"
 
-	"github.com/PulsarVPN/sing-box/common/conntrack"
+	"github.com/pulsarvpn/sing-box/common/conntrack"
 )
 
 func SetMemoryLimit(enabled bool) {

@@ -5,7 +5,7 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/option"
 	tun "github.com/sagernet/sing-tun"
 	"github.com/sagernet/sing/common/logger"
 	M "github.com/sagernet/sing/common/metadata"

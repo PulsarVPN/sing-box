@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/PulsarVPN/sing-box/common/urltest"
-	"github.com/PulsarVPN/sing-box/experimental/clashapi"
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/common/urltest"
+	"github.com/pulsarvpn/sing-box/experimental/clashapi"
+	"github.com/pulsarvpn/sing-box/log"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/debug"
 	E "github.com/sagernet/sing/common/exceptions"

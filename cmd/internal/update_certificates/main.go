@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/log"
 
 	"golang.org/x/exp/slices"
 )

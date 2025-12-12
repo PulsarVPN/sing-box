@@ -3,11 +3,11 @@
 package include
 
 import (
-	"github.com/PulsarVPN/sing-box/adapter/endpoint"
-	"github.com/PulsarVPN/sing-box/adapter/service"
-	"github.com/PulsarVPN/sing-box/dns"
-	"github.com/PulsarVPN/sing-box/protocol/tailscale"
-	"github.com/PulsarVPN/sing-box/service/derp"
+	"github.com/pulsarvpn/sing-box/adapter/endpoint"
+	"github.com/pulsarvpn/sing-box/adapter/service"
+	"github.com/pulsarvpn/sing-box/dns"
+	"github.com/pulsarvpn/sing-box/protocol/tailscale"
+	"github.com/pulsarvpn/sing-box/service/derp"
 )
 
 func registerTailscaleEndpoint(registry *endpoint.Registry) {

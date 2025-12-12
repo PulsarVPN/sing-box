@@ -4,7 +4,7 @@ import (
 	"errors"
 	"os"
 
-	"github.com/PulsarVPN/sing-box"
+	"github.com/pulsarvpn/sing-box"
 	E "github.com/sagernet/sing/common/exceptions"
 	N "github.com/sagernet/sing/common/network"
 

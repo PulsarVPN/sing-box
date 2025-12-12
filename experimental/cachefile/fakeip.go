@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/adapter"
+	C "github.com/pulsarvpn/sing-box/constant"
 	"github.com/sagernet/bbolt"
 	"github.com/sagernet/sing/common/logger"
 	M "github.com/sagernet/sing/common/metadata"

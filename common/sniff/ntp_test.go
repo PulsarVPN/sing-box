@@ -6,9 +6,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/common/sniff"
-	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/common/sniff"
+	C "github.com/pulsarvpn/sing-box/constant"
 
 	"github.com/stretchr/testify/require"
 )

@@ -6,8 +6,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/adapter"
+	C "github.com/pulsarvpn/sing-box/constant"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/rw"
 )

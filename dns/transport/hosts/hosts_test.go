@@ -4,7 +4,7 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/PulsarVPN/sing-box/dns/transport/hosts"
+	"github.com/pulsarvpn/sing-box/dns/transport/hosts"
 
 	"github.com/stretchr/testify/require"
 )

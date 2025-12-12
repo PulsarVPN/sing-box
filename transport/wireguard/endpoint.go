@@ -10,6 +10,8 @@ import (
 	"os"
 	"strings"
 
+	"github.com/pulsarvpn/wireguard-go/conn"
+	"github.com/pulsarvpn/wireguard-go/device"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"
 	F "github.com/sagernet/sing/common/format"
@@ -17,8 +19,6 @@ import (
 	"github.com/sagernet/sing/common/x/list"
 	"github.com/sagernet/sing/service"
 	"github.com/sagernet/sing/service/pause"
-	"github.com/sagernet/wireguard-go/conn"
-	"github.com/sagernet/wireguard-go/device"
 
 	"go4.org/netipx"
 )

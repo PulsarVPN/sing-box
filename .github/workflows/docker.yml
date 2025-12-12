@@ -10,7 +10,7 @@ on:
         description: "The tag version you want to build"
 
 env:
-  REGISTRY_IMAGE: ghcr.io/PulsarVPN/sing-box
+  REGISTRY_IMAGE: ghcr.io/pulsarvpn/sing-box
 
 jobs:
   build:

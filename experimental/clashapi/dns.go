@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/adapter"
+	C "github.com/pulsarvpn/sing-box/constant"
 	"github.com/sagernet/sing/common"
 
 	"github.com/go-chi/chi/v5"

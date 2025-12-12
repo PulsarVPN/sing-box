@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/cmd/internal/build_shared"
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/cmd/internal/build_shared"
+	"github.com/pulsarvpn/sing-box/log"
 	"github.com/sagernet/asc-go/asc"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"

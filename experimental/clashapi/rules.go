@@ -3,7 +3,7 @@ package clashapi
 import (
 	"net/http"
 
-	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/adapter"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"

@@ -3,7 +3,7 @@ package option
 import (
 	"reflect"
 
-	C "github.com/PulsarVPN/sing-box/constant"
+	C "github.com/pulsarvpn/sing-box/constant"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/json"

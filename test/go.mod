@@ -4,10 +4,6 @@ go 1.23.1
 
 toolchain go1.24.0
 
-require github.com/PulsarVPN/sing-box v0.0.0
-
-replace github.com/PulsarVPN/sing-box => ../
-
 require (
 	github.com/docker/docker v27.3.1+incompatible
 	github.com/docker/go-connections v0.5.0
@@ -114,7 +110,7 @@ require (
 	github.com/sagernet/smux v0.0.0-20231208180855-7041f6ea79e7 // indirect
 	github.com/sagernet/tailscale v1.80.3-mod.0 // indirect
 	github.com/sagernet/utls v1.6.7 // indirect
-	github.com/sagernet/wireguard-go v0.0.1-beta.5 // indirect
+	github.com/pulsarvpn/wireguard-go v1.0.5
 	github.com/sagernet/ws v0.0.0-20231204124109-acfe8907c854 // indirect
 	github.com/tailscale/certstore v0.1.1-0.20231202035212-d3fa0460f47e // indirect
 	github.com/tailscale/go-winio v0.0.0-20231025203758-c4f33415bf55 // indirect

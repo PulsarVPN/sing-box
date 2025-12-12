@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"runtime/debug"
 
-	C "github.com/PulsarVPN/sing-box/constant"
+	C "github.com/pulsarvpn/sing-box/constant"
 
 	"github.com/spf13/cobra"
 )

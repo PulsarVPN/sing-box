@@ -7,8 +7,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/PulsarVPN/sing-box/dns"
-	"github.com/PulsarVPN/sing-box/dns/transport"
+	"github.com/pulsarvpn/sing-box/dns"
+	"github.com/pulsarvpn/sing-box/dns/transport"
 	"github.com/sagernet/sing/common/buf"
 	E "github.com/sagernet/sing/common/exceptions"
 	M "github.com/sagernet/sing/common/metadata"

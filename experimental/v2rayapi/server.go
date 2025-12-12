@@ -5,10 +5,10 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/experimental"
-	"github.com/PulsarVPN/sing-box/log"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/experimental"
+	"github.com/pulsarvpn/sing-box/log"
+	"github.com/pulsarvpn/sing-box/option"
 	"github.com/sagernet/sing/common"
 
 	"google.golang.org/grpc"

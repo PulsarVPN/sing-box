@@ -4,9 +4,9 @@ import (
 	"flag"
 	"os"
 
-	"github.com/PulsarVPN/sing-box/cmd/internal/build_shared"
-	"github.com/PulsarVPN/sing-box/common/badversion"
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/cmd/internal/build_shared"
+	"github.com/pulsarvpn/sing-box/common/badversion"
+	"github.com/pulsarvpn/sing-box/log"
 )
 
 var (

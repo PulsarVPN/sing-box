@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/PulsarVPN/sing-box/cmd/internal/build_shared"
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/cmd/internal/build_shared"
+	"github.com/pulsarvpn/sing-box/log"
 	"github.com/sagernet/sing/common"
 )
 

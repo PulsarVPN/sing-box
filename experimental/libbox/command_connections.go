@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/experimental/clashapi"
-	"github.com/PulsarVPN/sing-box/experimental/clashapi/trafficontrol"
+	"github.com/pulsarvpn/sing-box/experimental/clashapi"
+	"github.com/pulsarvpn/sing-box/experimental/clashapi/trafficontrol"
 	"github.com/sagernet/sing/common/binary"
 	E "github.com/sagernet/sing/common/exceptions"
 	M "github.com/sagernet/sing/common/metadata"

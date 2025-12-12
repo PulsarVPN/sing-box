@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/log"
 	"github.com/sagernet/sing/common/control"
 	F "github.com/sagernet/sing/common/format"
 

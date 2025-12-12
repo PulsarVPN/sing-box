@@ -146,7 +146,7 @@ you can manage the service using the following command:
 
 [scoop]: https://github.com/ScoopInstaller/Main/blob/master/bucket/sing-box.json
 
-[winget]: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/PulsarVPN/sing-box
+[winget]: https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/pulsarvpn/sing-box
 
 [termux]: https://github.com/termux/termux-packages/tree/master/packages/sing-box
 

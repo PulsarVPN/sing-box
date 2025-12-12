@@ -4,9 +4,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/PulsarVPN/sing-box/common/listener"
-	"github.com/PulsarVPN/sing-box/common/tls"
-	"github.com/PulsarVPN/sing-box/protocol/naive"
+	"github.com/pulsarvpn/sing-box/common/listener"
+	"github.com/pulsarvpn/sing-box/common/tls"
+	"github.com/pulsarvpn/sing-box/protocol/naive"
 	"github.com/sagernet/quic-go"
 	"github.com/sagernet/quic-go/http3"
 	"github.com/sagernet/sing-quic"

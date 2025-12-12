@@ -1,4 +1,4 @@
-module github.com/PulsarVPN/sing-box
+module github.com/pulsarvpn/sing-box
 
 go 1.23.6
 
@@ -22,6 +22,7 @@ require (
 	github.com/mholt/acmez/v3 v3.1.2
 	github.com/miekg/dns v1.1.67
 	github.com/oschwald/maxminddb-golang v1.13.1
+	github.com/pulsarvpn/wireguard-go v1.0.5
 	github.com/sagernet/asc-go v0.0.0-20241217030726-d563060fe4e1
 	github.com/sagernet/bbolt v0.0.0-20231014093535-ea5cb2fe9f0a
 	github.com/sagernet/cors v1.2.1
@@ -39,7 +40,6 @@ require (
 	github.com/sagernet/sing-vmess v0.2.7
 	github.com/sagernet/smux v1.5.34-mod.2
 	github.com/sagernet/tailscale v1.80.3-sing-box-1.12-mod.2
-	github.com/sagernet/wireguard-go v0.0.1-beta.7
 	github.com/sagernet/ws v0.0.0-20231204124109-acfe8907c854
 	github.com/spf13/cobra v1.9.1
 	github.com/stretchr/testify v1.10.0
@@ -56,10 +56,6 @@ require (
 	google.golang.org/protobuf v1.36.6
 	howett.net/plist v1.0.1
 )
-
-//replace github.com/sagernet/sing => ../sing
-// TODO: if github.com/getlantern/wireguard-go gets merged, remove this line
-replace github.com/sagernet/wireguard-go => github.com/getlantern/wireguard-go v0.0.1-beta.5.0.20250303165430-793006c422ec
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
@@ -111,6 +107,7 @@ require (
 	github.com/safchain/ethtool v0.3.0 // indirect
 	github.com/sagernet/netlink v0.0.0-20240612041022-b9a21c07ac6a // indirect
 	github.com/sagernet/nftables v0.3.0-beta.4 // indirect
+	github.com/sagernet/wireguard-go v0.0.1-beta.4 // indirect
 	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/tailscale/certstore v0.1.1-0.20231202035212-d3fa0460f47e // indirect
 	github.com/tailscale/go-winio v0.0.0-20231025203758-c4f33415bf55 // indirect
@@ -120,7 +117,6 @@ require (
 	github.com/tailscale/netlink v1.1.1-0.20240822203006-4d49adab4de7 // indirect
 	github.com/tailscale/peercred v0.0.0-20250107143737-35a0c7bd7edc // indirect
 	github.com/tailscale/web-client-prebuilt v0.0.0-20250124233751-d4cd19a26976 // indirect
-	github.com/tevino/abool/v2 v2.1.0 // indirect
 	github.com/u-root/uio v0.0.0-20240224005618-d2acac8f3701 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/blake3 v0.2.4 // indirect

@@ -4,7 +4,7 @@ import (
 	"os"
 	"sort"
 
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/log"
 	E "github.com/sagernet/sing/common/exceptions"
 
 	"github.com/spf13/cobra"

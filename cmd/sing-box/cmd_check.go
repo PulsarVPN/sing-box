@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 
-	"github.com/PulsarVPN/sing-box"
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box"
+	"github.com/pulsarvpn/sing-box/log"
 
 	"github.com/spf13/cobra"
 )

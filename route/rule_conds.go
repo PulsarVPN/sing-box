@@ -1,8 +1,8 @@
 package route
 
 import (
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/option"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/option"
 )
 
 func hasRule(rules []option.Rule, cond func(rule option.DefaultRule) bool) bool {

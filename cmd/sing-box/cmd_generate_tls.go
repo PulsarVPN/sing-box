@@ -4,8 +4,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/PulsarVPN/sing-box/common/tls"
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/common/tls"
+	"github.com/pulsarvpn/sing-box/log"
 
 	"github.com/spf13/cobra"
 )

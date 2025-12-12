@@ -8,8 +8,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/PulsarVPN/sing-box/log"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/log"
+	"github.com/pulsarvpn/sing-box/option"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/json"
 	"github.com/sagernet/sing/common/json/badjson"

@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/PulsarVPN/sing-box/adapter"
-	"github.com/PulsarVPN/sing-box/common/sniff"
+	"github.com/pulsarvpn/sing-box/adapter"
+	"github.com/pulsarvpn/sing-box/common/sniff"
 
 	"github.com/stretchr/testify/require"
 )

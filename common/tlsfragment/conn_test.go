@@ -6,7 +6,7 @@ import (
 	"net"
 	"testing"
 
-	tf "github.com/PulsarVPN/sing-box/common/tlsfragment"
+	tf "github.com/pulsarvpn/sing-box/common/tlsfragment"
 
 	"github.com/stretchr/testify/require"
 )

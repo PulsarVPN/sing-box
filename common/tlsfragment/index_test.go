@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/PulsarVPN/sing-box/common/tlsfragment"
+	"github.com/pulsarvpn/sing-box/common/tlsfragment"
 
 	"github.com/stretchr/testify/require"
 )

@@ -3,7 +3,7 @@ package option
 import (
 	"strings"
 
-	C "github.com/PulsarVPN/sing-box/constant"
+	C "github.com/pulsarvpn/sing-box/constant"
 	E "github.com/sagernet/sing/common/exceptions"
 	F "github.com/sagernet/sing/common/format"
 	"github.com/sagernet/sing/common/json"

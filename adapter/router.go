@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"sync"
 
-	C "github.com/PulsarVPN/sing-box/constant"
+	C "github.com/pulsarvpn/sing-box/constant"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"
 	"github.com/sagernet/sing/common/ntp"

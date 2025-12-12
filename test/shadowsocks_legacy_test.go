@@ -4,8 +4,8 @@ import (
 	"net/netip"
 	"testing"
 
-	C "github.com/PulsarVPN/sing-box/constant"
-	"github.com/PulsarVPN/sing-box/option"
+	C "github.com/pulsarvpn/sing-box/constant"
+	"github.com/pulsarvpn/sing-box/option"
 	"github.com/sagernet/sing-shadowsocks2/shadowstream"
 	"github.com/sagernet/sing/common"
 	F "github.com/sagernet/sing/common/format"

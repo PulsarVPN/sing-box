@@ -34,8 +34,8 @@ or sending us your Apple ID [via email](mailto:contact@sagernet.org).
 brew install sfm
 ```
 
-* [GitHub Releases](https://github.com/PulsarVPN/sing-box/releases)
+* [GitHub Releases](https://github.com/pulsarvpn/sing-box/releases)
 
 ## :material-source-repository: Source code
 
-* [GitHub](https://github.com/PulsarVPN/sing-box-for-apple)
+* [GitHub](https://github.com/pulsarvpn/sing-box-for-apple)

@@ -11,7 +11,7 @@ docker run -d \
   -v /etc/sing-box:/etc/sing-box/ \
   --name=sing-box \
   --restart=always \
-  ghcr.io/PulsarVPN/sing-box \
+  ghcr.io/pulsarvpn/sing-box \
   -D /var/lib/sing-box \
   -C /etc/sing-box/ run
 ```
@@ -22,7 +22,7 @@ docker run -d \
 version: "3.8"
 services:
   sing-box:
-    image: ghcr.io/PulsarVPN/sing-box
+    image: ghcr.io/pulsarvpn/sing-box
     container_name: sing-box
     restart: always
     volumes:

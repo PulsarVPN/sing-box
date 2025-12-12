@@ -2,4 +2,4 @@
 
 package include
 
-import _ "github.com/PulsarVPN/sing-box/experimental/clashapi"
+import _ "github.com/pulsarvpn/sing-box/experimental/clashapi"

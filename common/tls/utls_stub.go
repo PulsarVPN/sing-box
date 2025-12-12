@@ -5,8 +5,8 @@ package tls
 import (
 	"context"
 
-	"github.com/PulsarVPN/sing-box/log"
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/log"
+	"github.com/pulsarvpn/sing-box/option"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

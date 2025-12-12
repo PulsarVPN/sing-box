@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"net"
 
-	"github.com/PulsarVPN/sing-box/experimental/deprecated"
+	"github.com/pulsarvpn/sing-box/experimental/deprecated"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/varbin"

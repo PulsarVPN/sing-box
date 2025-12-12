@@ -1,7 +1,7 @@
 package outbound
 
 import (
-	"github.com/PulsarVPN/sing-box/option"
+	"github.com/pulsarvpn/sing-box/option"
 )
 
 type Adapter struct {

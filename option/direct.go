@@ -3,7 +3,7 @@ package option
 import (
 	"context"
 
-	"github.com/PulsarVPN/sing-box/experimental/deprecated"
+	"github.com/pulsarvpn/sing-box/experimental/deprecated"
 	"github.com/sagernet/sing/common/json"
 )
 

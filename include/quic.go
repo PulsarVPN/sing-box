@@ -3,15 +3,15 @@
 package include
 
 import (
-	"github.com/PulsarVPN/sing-box/adapter/inbound"
-	"github.com/PulsarVPN/sing-box/adapter/outbound"
-	"github.com/PulsarVPN/sing-box/dns"
-	"github.com/PulsarVPN/sing-box/dns/transport/quic"
-	"github.com/PulsarVPN/sing-box/protocol/hysteria"
-	"github.com/PulsarVPN/sing-box/protocol/hysteria2"
-	_ "github.com/PulsarVPN/sing-box/protocol/naive/quic"
-	"github.com/PulsarVPN/sing-box/protocol/tuic"
-	_ "github.com/PulsarVPN/sing-box/transport/v2rayquic"
+	"github.com/pulsarvpn/sing-box/adapter/inbound"
+	"github.com/pulsarvpn/sing-box/adapter/outbound"
+	"github.com/pulsarvpn/sing-box/dns"
+	"github.com/pulsarvpn/sing-box/dns/transport/quic"
+	"github.com/pulsarvpn/sing-box/protocol/hysteria"
+	"github.com/pulsarvpn/sing-box/protocol/hysteria2"
+	_ "github.com/pulsarvpn/sing-box/protocol/naive/quic"
+	"github.com/pulsarvpn/sing-box/protocol/tuic"
+	_ "github.com/pulsarvpn/sing-box/transport/v2rayquic"
 )
 
 func registerQUICInbounds(registry *inbound.Registry) {

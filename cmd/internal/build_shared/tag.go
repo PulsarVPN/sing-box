@@ -1,7 +1,7 @@
 package build_shared
 
 import (
-	"github.com/PulsarVPN/sing-box/common/badversion"
+	"github.com/pulsarvpn/sing-box/common/badversion"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/shell"
 )

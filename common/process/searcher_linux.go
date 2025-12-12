@@ -6,7 +6,7 @@ import (
 	"context"
 	"net/netip"
 
-	"github.com/PulsarVPN/sing-box/log"
+	"github.com/pulsarvpn/sing-box/log"
 )
 
 var _ Searcher = (*linuxSearcher)(nil)

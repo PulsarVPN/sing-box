@@ -5,7 +5,7 @@
 --description "The universal proxy platform."
 --url "https://sing-box.sagernet.org/"
 --maintainer "nekohasekai <contact-git@sekai.icu>"
---deb-field "Bug: https://github.com/PulsarVPN/sing-box/issues"
+--deb-field "Bug: https://github.com/pulsarvpn/sing-box/issues"
 --no-deb-generate-changes
 --config-files /etc/sing-box/config.json
 --after-install release/config/sing-box.postinst

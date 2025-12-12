@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"net"
 
-	"github.com/PulsarVPN/sing-box/experimental/clashapi"
+	"github.com/pulsarvpn/sing-box/experimental/clashapi"
 	"github.com/sagernet/sing/common/binary"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/varbin"

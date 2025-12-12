@@ -1,8 +1,8 @@
 package wireguard
 
 import (
-	"github.com/PulsarVPN/sing-box/common/dialer"
-	"github.com/sagernet/wireguard-go/conn"
+	"github.com/pulsarvpn/sing-box/common/dialer"
+	"github.com/pulsarvpn/wireguard-go/conn"
 )
 
 func init() {
