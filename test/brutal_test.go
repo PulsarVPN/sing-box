@@ -6,97 +6,11 @@ import (
 
 	C "github.com/pulsarvpn/sing-box/constant"
 	"github.com/pulsarvpn/sing-box/option"
-	"github.com/sagernet/sing-shadowsocks/shadowaead_2022"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/json/badoption"
 
 	"github.com/gofrs/uuid/v5"
 )
-
-func TestBrutalShadowsocks(t *testing.T) {
-	method := shadowaead_2022.List[0]
-	password := mkBase64(t, 16)
-	startInstance(t, option.Options{
-		Inbounds: []option.Inbound{
-			{
-				Type: C.TypeMixed,
-				Tag:  "mixed-in",
-				Options: &option.HTTPMixedInboundOptions{
-					ListenOptions: option.ListenOptions{
-						Listen:     common.Ptr(badoption.Addr(netip.IPv4Unspecified())),
-						ListenPort: clientPort,
-					},
-				},
-			},
-			{
-				Type: C.TypeShadowsocks,
-				Options: &option.ShadowsocksInboundOptions{
-					ListenOptions: option.ListenOptions{
-						Listen:     common.Ptr(badoption.Addr(netip.IPv4Unspecified())),
-						ListenPort: serverPort,
-					},
-					Method:   method,
-					Password: password,
-					Multiplex: &option.InboundMultiplexOptions{
-						Enabled: true,
-						Brutal: &option.BrutalOptions{
-							Enabled:  true,
-							UpMbps:   100,
-							DownMbps: 100,
-						},
-					},
-				},
-			},
-		},
-		Outbounds: []option.Outbound{
-			{
-				Type: C.TypeDirect,
-			},
-			{
-				Type: C.TypeShadowsocks,
-				Tag:  "ss-out",
-				Options: &option.ShadowsocksOutboundOptions{
-					ServerOptions: option.ServerOptions{
-						Server:     "127.0.0.1",
-						ServerPort: serverPort,
-					},
-					Method:   method,
-					Password: password,
-					Multiplex: &option.OutboundMultiplexOptions{
-						Enabled:  true,
-						Protocol: "smux",
-						Padding:  true,
-						Brutal: &option.BrutalOptions{
-							Enabled:  true,
-							UpMbps:   100,
-							DownMbps: 100,
-						},
-					},
-				},
-			},
-		},
-		Route: &option.RouteOptions{
-			Rules: []option.Rule{
-				{
-					Type: C.RuleTypeDefault,
-					DefaultOptions: option.DefaultRule{
-						RawDefaultRule: option.RawDefaultRule{
-							Inbound: []string{"mixed-in"},
-						},
-						RuleAction: option.RuleAction{
-							Action: C.RuleActionTypeRoute,
-
-							RouteOptions: option.RouteActionOptions{
-								Outbound: "ss-out",
-							},
-						},
-					},
-				},
-			},
-		},
-	})
-	testSuit(t, clientPort, testPort)
-}
 
 func TestBrutalTrojan(t *testing.T) {
 	_, certPem, keyPem := createSelfSignedCertificate(t, "example.org")
@@ -168,88 +82,6 @@ func TestBrutalTrojan(t *testing.T) {
 							Enabled:         true,
 							ServerName:      "example.org",
 							CertificatePath: certPem,
-						},
-					},
-				},
-			},
-		},
-		Route: &option.RouteOptions{
-			Rules: []option.Rule{
-				{
-					Type: C.RuleTypeDefault,
-					DefaultOptions: option.DefaultRule{
-						RawDefaultRule: option.RawDefaultRule{
-							Inbound: []string{"mixed-in"},
-						},
-						RuleAction: option.RuleAction{
-							Action: C.RuleActionTypeRoute,
-
-							RouteOptions: option.RouteActionOptions{
-								Outbound: "ss-out",
-							},
-						},
-					},
-				},
-			},
-		},
-	})
-	testSuit(t, clientPort, testPort)
-}
-
-func TestBrutalVMess(t *testing.T) {
-	user, _ := uuid.NewV4()
-	startInstance(t, option.Options{
-		Inbounds: []option.Inbound{
-			{
-				Type: C.TypeMixed,
-				Tag:  "mixed-in",
-				Options: &option.HTTPMixedInboundOptions{
-					ListenOptions: option.ListenOptions{
-						Listen:     common.Ptr(badoption.Addr(netip.IPv4Unspecified())),
-						ListenPort: clientPort,
-					},
-				},
-			},
-			{
-				Type: C.TypeVMess,
-				Options: &option.VMessInboundOptions{
-					ListenOptions: option.ListenOptions{
-						Listen:     common.Ptr(badoption.Addr(netip.IPv4Unspecified())),
-						ListenPort: serverPort,
-					},
-					Users: []option.VMessUser{{UUID: user.String()}},
-					Multiplex: &option.InboundMultiplexOptions{
-						Enabled: true,
-						Brutal: &option.BrutalOptions{
-							Enabled:  true,
-							UpMbps:   100,
-							DownMbps: 100,
-						},
-					},
-				},
-			},
-		},
-		Outbounds: []option.Outbound{
-			{
-				Type: C.TypeDirect,
-			},
-			{
-				Type: C.TypeVMess,
-				Tag:  "ss-out",
-				Options: &option.VMessOutboundOptions{
-					ServerOptions: option.ServerOptions{
-						Server:     "127.0.0.1",
-						ServerPort: serverPort,
-					},
-					UUID: user.String(),
-					Multiplex: &option.OutboundMultiplexOptions{
-						Enabled:  true,
-						Protocol: "h2mux",
-						Padding:  true,
-						Brutal: &option.BrutalOptions{
-							Enabled:  true,
-							UpMbps:   100,
-							DownMbps: 100,
 						},
 					},
 				},

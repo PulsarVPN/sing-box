@@ -3,20 +3,16 @@ package include
 import (
 	"context"
 
-	"github.com/pulsarvpn/sing-box"
-	"github.com/pulsarvpn/sing-box/adapter"
+	box "github.com/pulsarvpn/sing-box"
 	"github.com/pulsarvpn/sing-box/adapter/endpoint"
 	"github.com/pulsarvpn/sing-box/adapter/inbound"
 	"github.com/pulsarvpn/sing-box/adapter/outbound"
 	"github.com/pulsarvpn/sing-box/adapter/service"
-	C "github.com/pulsarvpn/sing-box/constant"
 	"github.com/pulsarvpn/sing-box/dns"
 	"github.com/pulsarvpn/sing-box/dns/transport"
 	"github.com/pulsarvpn/sing-box/dns/transport/fakeip"
 	"github.com/pulsarvpn/sing-box/dns/transport/hosts"
 	"github.com/pulsarvpn/sing-box/dns/transport/local"
-	"github.com/pulsarvpn/sing-box/log"
-	"github.com/pulsarvpn/sing-box/option"
 	"github.com/pulsarvpn/sing-box/protocol/anytls"
 	"github.com/pulsarvpn/sing-box/protocol/block"
 	"github.com/pulsarvpn/sing-box/protocol/direct"
@@ -26,18 +22,11 @@ import (
 	"github.com/pulsarvpn/sing-box/protocol/mixed"
 	"github.com/pulsarvpn/sing-box/protocol/naive"
 	"github.com/pulsarvpn/sing-box/protocol/redirect"
-	"github.com/pulsarvpn/sing-box/protocol/shadowsocks"
-	"github.com/pulsarvpn/sing-box/protocol/shadowtls"
-	"github.com/pulsarvpn/sing-box/protocol/socks"
-	"github.com/pulsarvpn/sing-box/protocol/ssh"
-	"github.com/pulsarvpn/sing-box/protocol/tor"
 	"github.com/pulsarvpn/sing-box/protocol/trojan"
 	"github.com/pulsarvpn/sing-box/protocol/tun"
 	"github.com/pulsarvpn/sing-box/protocol/vless"
-	"github.com/pulsarvpn/sing-box/protocol/vmess"
 	"github.com/pulsarvpn/sing-box/service/resolved"
 	"github.com/pulsarvpn/sing-box/service/ssmapi"
-	E "github.com/sagernet/sing/common/exceptions"
 )
 
 func Context(ctx context.Context) context.Context {
@@ -52,20 +41,15 @@ func InboundRegistry() *inbound.Registry {
 	redirect.RegisterTProxy(registry)
 	direct.RegisterInbound(registry)
 
-	socks.RegisterInbound(registry)
 	http.RegisterInbound(registry)
 	mixed.RegisterInbound(registry)
 
-	shadowsocks.RegisterInbound(registry)
-	vmess.RegisterInbound(registry)
 	trojan.RegisterInbound(registry)
 	naive.RegisterInbound(registry)
-	shadowtls.RegisterInbound(registry)
 	vless.RegisterInbound(registry)
 	anytls.RegisterInbound(registry)
 
 	registerQUICInbounds(registry)
-	registerStubForRemovedInbounds(registry)
 
 	return registry
 }
@@ -81,20 +65,13 @@ func OutboundRegistry() *outbound.Registry {
 	group.RegisterSelector(registry)
 	group.RegisterURLTest(registry)
 
-	socks.RegisterOutbound(registry)
 	http.RegisterOutbound(registry)
-	shadowsocks.RegisterOutbound(registry)
-	vmess.RegisterOutbound(registry)
 	trojan.RegisterOutbound(registry)
-	tor.RegisterOutbound(registry)
-	ssh.RegisterOutbound(registry)
-	shadowtls.RegisterOutbound(registry)
 	vless.RegisterOutbound(registry)
 	anytls.RegisterOutbound(registry)
 
 	registerQUICOutbounds(registry)
 	registerWireGuardOutbound(registry)
-	registerStubForRemovedOutbounds(registry)
 
 	return registry
 }
@@ -103,7 +80,6 @@ func EndpointRegistry() *endpoint.Registry {
 	registry := endpoint.NewRegistry()
 
 	registerWireGuardEndpoint(registry)
-	registerTailscaleEndpoint(registry)
 
 	return registry
 }
@@ -122,7 +98,6 @@ func DNSTransportRegistry() *dns.TransportRegistry {
 
 	registerQUICTransports(registry)
 	registerDHCPTransport(registry)
-	registerTailscaleTransport(registry)
 
 	return registry
 }
@@ -133,19 +108,5 @@ func ServiceRegistry() *service.Registry {
 	resolved.RegisterService(registry)
 	ssmapi.RegisterService(registry)
 
-	registerDERPService(registry)
-
 	return registry
-}
-
-func registerStubForRemovedInbounds(registry *inbound.Registry) {
-	inbound.Register[option.ShadowsocksInboundOptions](registry, C.TypeShadowsocksR, func(ctx context.Context, router adapter.Router, logger log.ContextLogger, tag string, options option.ShadowsocksInboundOptions) (adapter.Inbound, error) {
-		return nil, E.New("ShadowsocksR is deprecated and removed in sing-box 1.6.0")
-	})
-}
-
-func registerStubForRemovedOutbounds(registry *outbound.Registry) {
-	outbound.Register[option.ShadowsocksROutboundOptions](registry, C.TypeShadowsocksR, func(ctx context.Context, router adapter.Router, logger log.ContextLogger, tag string, options option.ShadowsocksROutboundOptions) (adapter.Outbound, error) {
-		return nil, E.New("ShadowsocksR is deprecated and removed in sing-box 1.6.0")
-	})
 }

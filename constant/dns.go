@@ -27,7 +27,6 @@ const (
 	DNSTypeHosts       = "hosts"
 	DNSTypeFakeIP      = "fakeip"
 	DNSTypeDHCP        = "dhcp"
-	DNSTypeTailscale   = "tailscale"
 )
 
 const (

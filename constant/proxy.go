@@ -1,33 +1,25 @@
 package constant
 
 const (
-	TypeTun          = "tun"
-	TypeRedirect     = "redirect"
-	TypeTProxy       = "tproxy"
-	TypeDirect       = "direct"
-	TypeBlock        = "block"
-	TypeDNS          = "dns"
-	TypeSOCKS        = "socks"
-	TypeHTTP         = "http"
-	TypeMixed        = "mixed"
-	TypeShadowsocks  = "shadowsocks"
-	TypeVMess        = "vmess"
-	TypeTrojan       = "trojan"
-	TypeNaive        = "naive"
-	TypeWireGuard    = "wireguard"
-	TypeHysteria     = "hysteria"
-	TypeTor          = "tor"
-	TypeSSH          = "ssh"
-	TypeShadowTLS    = "shadowtls"
-	TypeAnyTLS       = "anytls"
-	TypeShadowsocksR = "shadowsocksr"
-	TypeVLESS        = "vless"
-	TypeTUIC         = "tuic"
-	TypeHysteria2    = "hysteria2"
-	TypeTailscale    = "tailscale"
-	TypeDERP         = "derp"
-	TypeResolved     = "resolved"
-	TypeSSMAPI       = "ssm-api"
+	TypeTun       = "tun"
+	TypeRedirect  = "redirect"
+	TypeTProxy    = "tproxy"
+	TypeDirect    = "direct"
+	TypeBlock     = "block"
+	TypeDNS       = "dns"
+	TypeHTTP      = "http"
+	TypeMixed     = "mixed"
+	TypeTrojan    = "trojan"
+	TypeNaive     = "naive"
+	TypeWireGuard = "wireguard"
+	TypeHysteria  = "hysteria"
+	TypeAnyTLS    = "anytls"
+	TypeVLESS     = "vless"
+	TypeTUIC      = "tuic"
+	TypeHysteria2 = "hysteria2"
+	TypeDERP      = "derp"
+	TypeResolved  = "resolved"
+	TypeSSMAPI    = "ssm-api"
 )
 
 const (
@@ -49,16 +41,10 @@ func ProxyDisplayName(proxyType string) string {
 		return "Block"
 	case TypeDNS:
 		return "DNS"
-	case TypeSOCKS:
-		return "SOCKS"
 	case TypeHTTP:
 		return "HTTP"
 	case TypeMixed:
 		return "Mixed"
-	case TypeShadowsocks:
-		return "Shadowsocks"
-	case TypeVMess:
-		return "VMess"
 	case TypeTrojan:
 		return "Trojan"
 	case TypeNaive:
@@ -67,14 +53,6 @@ func ProxyDisplayName(proxyType string) string {
 		return "WireGuard"
 	case TypeHysteria:
 		return "Hysteria"
-	case TypeTor:
-		return "Tor"
-	case TypeSSH:
-		return "SSH"
-	case TypeShadowTLS:
-		return "ShadowTLS"
-	case TypeShadowsocksR:
-		return "ShadowsocksR"
 	case TypeVLESS:
 		return "VLESS"
 	case TypeTUIC:
