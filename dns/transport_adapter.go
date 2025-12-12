@@ -3,9 +3,9 @@ package dns
 import (
 	"net/netip"
 
-	"github.com/sagernet/sing-box/adapter"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/option"
+	"github.com/PulsarVPN/sing-box/adapter"
+	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/PulsarVPN/sing-box/option"
 )
 
 var _ adapter.LegacyDNSTransport = (*TransportAdapter)(nil)

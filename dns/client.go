@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/compatible"
-	C "github.com/sagernet/sing-box/constant"
+	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/common/compatible"
+	C "github.com/PulsarVPN/sing-box/constant"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/logger"

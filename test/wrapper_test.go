@@ -3,8 +3,8 @@ package main
 import (
 	"testing"
 
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/option"
+	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/PulsarVPN/sing-box/option"
 
 	"github.com/stretchr/testify/require"
 )

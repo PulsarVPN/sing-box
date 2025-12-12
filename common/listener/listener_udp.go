@@ -8,8 +8,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/redir"
+	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/common/redir"
 	"github.com/sagernet/sing/common/buf"
 	"github.com/sagernet/sing/common/control"
 	E "github.com/sagernet/sing/common/exceptions"

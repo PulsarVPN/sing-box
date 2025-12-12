@@ -3,8 +3,8 @@ package rule
 import (
 	"strings"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/option"
+	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/option"
 	"github.com/sagernet/sing/common"
 )
 

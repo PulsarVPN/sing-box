@@ -3,9 +3,9 @@ package deprecated
 import (
 	"fmt"
 
-	"github.com/sagernet/sing-box/common/badversion"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/experimental/locale"
+	"github.com/PulsarVPN/sing-box/common/badversion"
+	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/PulsarVPN/sing-box/experimental/locale"
 	F "github.com/sagernet/sing/common/format"
 
 	"golang.org/x/mod/semver"

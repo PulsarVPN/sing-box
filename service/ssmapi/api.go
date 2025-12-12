@@ -3,7 +3,7 @@ package ssmapi
 import (
 	"net/http"
 
-	C "github.com/sagernet/sing-box/constant"
+	C "github.com/PulsarVPN/sing-box/constant"
 	"github.com/sagernet/sing/common/logger"
 	sHTTP "github.com/sagernet/sing/protocol/http"
 

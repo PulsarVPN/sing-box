@@ -6,13 +6,13 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/adapter/endpoint"
-	"github.com/sagernet/sing-box/common/dialer"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/log"
-	"github.com/sagernet/sing-box/option"
-	"github.com/sagernet/sing-box/transport/wireguard"
+	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/adapter/endpoint"
+	"github.com/PulsarVPN/sing-box/common/dialer"
+	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/PulsarVPN/sing-box/log"
+	"github.com/PulsarVPN/sing-box/option"
+	"github.com/PulsarVPN/sing-box/transport/wireguard"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/bufio"
 	E "github.com/sagernet/sing/common/exceptions"
@@ -99,7 +99,8 @@ func NewEndpoint(ctx context.Context, router adapter.Router, logger log.ContextL
 				Reserved:                    it.Reserved,
 			}
 		}),
-		Workers: options.Workers,
+		Workers:                          options.Workers,
+		WireGuardAdvancedSecurityOptions: options.WireGuardAdvancedSecurityOptions,
 	})
 	if err != nil {
 		return nil, err

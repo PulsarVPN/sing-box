@@ -27,8 +27,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/option"
+	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/option"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/debug"
 	E "github.com/sagernet/sing/common/exceptions"

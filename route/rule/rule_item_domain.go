@@ -3,7 +3,7 @@ package rule
 import (
 	"strings"
 
-	"github.com/sagernet/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/adapter"
 	"github.com/sagernet/sing/common/domain"
 	E "github.com/sagernet/sing/common/exceptions"
 )

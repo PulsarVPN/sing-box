@@ -9,7 +9,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/sagernet/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/adapter"
 	"github.com/sagernet/sing/service"
 
 	"golang.org/x/sys/windows"

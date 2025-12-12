@@ -1,6 +1,8 @@
 module github.com/PulsarVPN/sing-box
 
-go 1.23.1
+go 1.23.6
+
+toolchain go1.24.0
 
 require (
 	github.com/anytls/sing-anytls v0.0.11
@@ -56,6 +58,8 @@ require (
 )
 
 //replace github.com/sagernet/sing => ../sing
+// TODO: if github.com/getlantern/wireguard-go gets merged, remove this line
+replace github.com/sagernet/wireguard-go => github.com/getlantern/wireguard-go v0.0.1-beta.5.0.20250303165430-793006c422ec
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect

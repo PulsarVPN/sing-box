@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/sagernet/sing-box/experimental/deprecated"
-	"github.com/sagernet/sing-box/include"
-	"github.com/sagernet/sing-box/log"
+	"github.com/PulsarVPN/sing-box/experimental/deprecated"
+	"github.com/PulsarVPN/sing-box/include"
+	"github.com/PulsarVPN/sing-box/log"
 	"github.com/sagernet/sing/service"
 	"github.com/sagernet/sing/service/filemanager"
 

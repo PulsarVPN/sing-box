@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/sniff"
+	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/common/sniff"
 
 	"github.com/stretchr/testify/require"
 )

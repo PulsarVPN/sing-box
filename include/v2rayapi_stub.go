@@ -3,10 +3,10 @@
 package include
 
 import (
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/experimental"
-	"github.com/sagernet/sing-box/log"
-	"github.com/sagernet/sing-box/option"
+	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/experimental"
+	"github.com/PulsarVPN/sing-box/log"
+	"github.com/PulsarVPN/sing-box/option"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

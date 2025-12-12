@@ -5,7 +5,7 @@ import (
 	_ "unsafe"
 )
 
-// https://github.com/SagerNet/sing-box/issues/3233
+// https://github.com/PulsarVPN/sing-box/issues/3233
 // https://github.com/golang/go/issues/70508
 // https://github.com/tailscale/tailscale/issues/13452
 

@@ -5,10 +5,10 @@ package v2ray
 import (
 	"context"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/tls"
-	"github.com/sagernet/sing-box/option"
-	"github.com/sagernet/sing-box/transport/v2raygrpclite"
+	"github.com/PulsarVPN/sing-box/adapter"
+	"github.com/PulsarVPN/sing-box/common/tls"
+	"github.com/PulsarVPN/sing-box/option"
+	"github.com/PulsarVPN/sing-box/transport/v2raygrpclite"
 	"github.com/sagernet/sing/common/logger"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"

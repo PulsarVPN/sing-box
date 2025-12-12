@@ -1,7 +1,7 @@
 package wireguard
 
 import (
-	"github.com/sagernet/sing-box/common/dialer"
+	"github.com/PulsarVPN/sing-box/common/dialer"
 	"github.com/sagernet/wireguard-go/conn"
 )
 

@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"time"
 
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/experimental/locale"
-	"github.com/sagernet/sing-box/log"
+	C "github.com/PulsarVPN/sing-box/constant"
+	"github.com/PulsarVPN/sing-box/experimental/locale"
+	"github.com/PulsarVPN/sing-box/log"
 	"github.com/sagernet/sing/common/byteformats"
 )
 

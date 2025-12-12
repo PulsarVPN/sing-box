@@ -34,6 +34,30 @@ icon: material/new-box
   ... // Dial Fields
 }
 ```
+!!! question "Since sing-box 1.xx.0"
+
+#### Advanced security (AmneziaWG)
+
+To activate advanced security mode for WireGuard (powered by AmneziaWG), please add the following fields to the configuration:
+
+```json5
+{
+  ...
+  "private_key": "....",
+  "jc": 0, // JunkPacketCount           
+  "jmin": 0, // JunkPacketMinSize         
+  "jmax":  0, // JunkPacketMaxSize         
+  "s1": 0, // InitPacketJunkSize        
+  "s2":  0, // ResponsePacketJunkSize    
+  "h1": 0, // InitPacketMagicHeader     
+  "h2":  0, // ResponsePacketMagicHeader 
+  "h3": 0, // UnderloadPacketMagicHeader
+  "h4":  0, // TransportPacketMagicHeader
+}
+```
+
+Setting any of these values with a non-zero value will activate the corresponding security feature.
+If neither of these values is set, the default WireGuard security will be used.
 
 !!! note ""
 

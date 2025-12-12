@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/sagernet/sing-box/common/geosite"
-	"github.com/sagernet/sing-box/log"
+	"github.com/PulsarVPN/sing-box/common/geosite"
+	"github.com/PulsarVPN/sing-box/log"
 	E "github.com/sagernet/sing/common/exceptions"
 
 	"github.com/spf13/cobra"
