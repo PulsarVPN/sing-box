@@ -19,18 +19,18 @@ type AmneziaWGAdvancedOptions struct {
 	InitPacketJunkSize int `json:"init_packet_junk_size,omitempty"`
 	// ResponsePacketJunkSize (s2) - Size of junk to add to response handshake packets
 	ResponsePacketJunkSize int `json:"response_packet_junk_size,omitempty"`
-	// CookiePacketJunkSize (s3) - Size of junk to add to cookie packets
+	// CookiePacketJunkSize (s3) - Size of junk to add to cookie packets (alias: underload_packet_junk_size)
 	CookiePacketJunkSize int `json:"cookie_packet_junk_size,omitempty"`
 	// TransportPacketJunkSize (s4) - Size of junk to add to transport packets
 	TransportPacketJunkSize int `json:"transport_packet_junk_size,omitempty"`
-	// InitPacketMagicHeader (h1) - Magic header for init packets (can be "start" or "start-end" range)
-	InitPacketMagicHeader string `json:"init_packet_magic_header,omitempty"`
+	// InitPacketMagicHeader (h1) - Magic header for init packets
+	InitPacketMagicHeader uint32 `json:"init_packet_magic_header,omitempty"`
 	// ResponsePacketMagicHeader (h2) - Magic header for response packets
-	ResponsePacketMagicHeader string `json:"response_packet_magic_header,omitempty"`
-	// CookiePacketMagicHeader (h3) - Magic header for cookie packets
-	CookiePacketMagicHeader string `json:"cookie_packet_magic_header,omitempty"`
+	ResponsePacketMagicHeader uint32 `json:"response_packet_magic_header,omitempty"`
+	// UnderloadPacketMagicHeader (h3) - Magic header for underload/cookie packets
+	UnderloadPacketMagicHeader uint32 `json:"underload_packet_magic_header,omitempty"`
 	// TransportPacketMagicHeader (h4) - Magic header for transport packets
-	TransportPacketMagicHeader string `json:"transport_packet_magic_header,omitempty"`
+	TransportPacketMagicHeader uint32 `json:"transport_packet_magic_header,omitempty"`
 }
 
 type AmneziaWGEndpointOptions struct {
@@ -80,4 +80,3 @@ type LegacyAmneziaWGPeer struct {
 	AllowedIPs   badoption.Listable[netip.Prefix] `json:"allowed_ips,omitempty"`
 	Reserved     []uint8                          `json:"reserved,omitempty"`
 }
-

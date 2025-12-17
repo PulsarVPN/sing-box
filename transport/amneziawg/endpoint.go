@@ -69,17 +69,17 @@ func NewEndpoint(options EndpointOptions) (*Endpoint, error) {
 	if options.TransportPacketJunkSize > 0 {
 		ipcConf += "\ns4=" + F.ToString(options.TransportPacketJunkSize)
 	}
-	if options.InitPacketMagicHeader != "" {
-		ipcConf += "\nh1=" + options.InitPacketMagicHeader
+	if options.InitPacketMagicHeader > 0 {
+		ipcConf += "\nh1=" + F.ToString(options.InitPacketMagicHeader)
 	}
-	if options.ResponsePacketMagicHeader != "" {
-		ipcConf += "\nh2=" + options.ResponsePacketMagicHeader
+	if options.ResponsePacketMagicHeader > 0 {
+		ipcConf += "\nh2=" + F.ToString(options.ResponsePacketMagicHeader)
 	}
-	if options.CookiePacketMagicHeader != "" {
-		ipcConf += "\nh3=" + options.CookiePacketMagicHeader
+	if options.UnderloadPacketMagicHeader > 0 {
+		ipcConf += "\nh3=" + F.ToString(options.UnderloadPacketMagicHeader)
 	}
-	if options.TransportPacketMagicHeader != "" {
-		ipcConf += "\nh4=" + options.TransportPacketMagicHeader
+	if options.TransportPacketMagicHeader > 0 {
+		ipcConf += "\nh4=" + F.ToString(options.TransportPacketMagicHeader)
 	}
 	var peers []peerConfig
 	for peerIndex, rawPeer := range options.Peers {

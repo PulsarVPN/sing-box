@@ -62,7 +62,7 @@ func init() {
 	sharedFlags = append(sharedFlags, "-ldflags", "-X github.com/pulsarvpn/sing-box/constant.Version="+currentTag+" -s -w -buildid=")
 	debugFlags = append(debugFlags, "-ldflags", "-X github.com/pulsarvpn/sing-box/constant.Version="+currentTag)
 
-	sharedTags = append(sharedTags, "with_gvisor", "with_quic", "with_wireguard", "with_utls", "with_clash_api", "with_conntrack")
+	sharedTags = append(sharedTags, "with_gvisor", "with_quic", "with_wireguard", "with_amneziawg", "with_utls", "with_clash_api", "with_conntrack")
 	darwinTags = append(darwinTags, "with_dhcp")
 	memcTags = append(memcTags, "with_tailscale")
 	notMemcTags = append(notMemcTags, "with_low_memory")
@@ -85,7 +85,7 @@ func buildAndroid() {
 		log.Fatal(E.Cause(err, "check java version"))
 	}
 	if !strings.Contains(javaVersion, "openjdk 17") {
-		log.Fatal("java version should be openjdk 17")
+		log.Warn("java version should be openjdk 17, but found: ", javaVersion)
 	}
 
 	var bindTarget string
