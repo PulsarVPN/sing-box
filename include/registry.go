@@ -72,6 +72,7 @@ func OutboundRegistry() *outbound.Registry {
 
 	registerQUICOutbounds(registry)
 	registerWireGuardOutbound(registry)
+	registerAmneziaWGOutbound(registry)
 
 	return registry
 }
@@ -80,6 +81,7 @@ func EndpointRegistry() *endpoint.Registry {
 	registry := endpoint.NewRegistry()
 
 	registerWireGuardEndpoint(registry)
+	registerAmneziaWGEndpoint(registry)
 
 	return registry
 }

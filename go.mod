@@ -1,8 +1,6 @@
 module github.com/pulsarvpn/sing-box
 
-go 1.23.6
-
-toolchain go1.24.0
+go 1.24.4
 
 require (
 	github.com/anytls/sing-anytls v0.0.11
@@ -20,6 +18,7 @@ require (
 	github.com/mholt/acmez/v3 v3.1.2
 	github.com/miekg/dns v1.1.67
 	github.com/oschwald/maxminddb-golang v1.13.1
+	github.com/pulsarvpn/amneziawg-go v1.0.0
 	github.com/pulsarvpn/wireguard-go v1.0.10
 	github.com/sagernet/asc-go v0.0.0-20241217030726-d563060fe4e1
 	github.com/sagernet/bbolt v0.0.0-20231014093535-ea5cb2fe9f0a
