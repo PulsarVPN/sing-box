@@ -60,7 +60,7 @@ func init() {
 		currentTag = "unknown"
 	}
 	// Added -extldflags for 16KB page size alignment (required for Android 15+ / Google Play Nov 2025)
-	sharedFlags = append(sharedFlags, "-ldflags", "-X github.com/pulsarvpn/sing-box/constant.Version="+currentTag+" -s -w -buildid= -extldflags=-Wl,-z,max-page-size=16384")
+	sharedFlags = append(sharedFlags, "-ldflags", "-X github.com/pulsarvpn/sing-box/constant.Version="+currentTag+" -buildid= -extldflags=-Wl,-z,max-page-size=16384")
 	debugFlags = append(debugFlags, "-ldflags", "-X github.com/pulsarvpn/sing-box/constant.Version="+currentTag+" -extldflags=-Wl,-z,max-page-size=16384")
 
 	sharedTags = append(sharedTags, "with_gvisor", "with_quic", "with_wireguard", "with_amneziawg", "with_utls", "with_clash_api", "with_conntrack")
